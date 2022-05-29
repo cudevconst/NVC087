@@ -120,11 +120,6 @@ public class VeDAO extends AbstractDAO{
             pstm.setInt(3, ve.getHoaDon().getIdHoaDon());
 
             pstm.executeUpdate();
-
-
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
