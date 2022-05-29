@@ -2,7 +2,7 @@ const movieID = sessionStorage.getItem('movieID')
 console.log(movieID);
 var imgDetail = document.querySelector('.trai img')
 const phai = document.querySelector('.phai')
-fetch('http://localhost:8080/Cinema/api/phim/' + movieID)
+fetch('http://localhost:8080/api/phim/' + movieID)
 .then(response => response.json())
 .then(data => {
     var html = `<h2>${data.tenPhim}</h2>

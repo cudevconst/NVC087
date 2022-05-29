@@ -5,7 +5,7 @@ start();
 async function getAllDetailCinema(){
     // let api = "http://localhost:3000/detailCinema"
     const movieID = sessionStorage.getItem("movieID");
-    fetch('http://localhost:8080/Cinema/api/phim/' + movieID)
+    fetch('http://localhost:8080/api/phim/' + movieID)
         .then( await function(response){
             return response.json();
         })

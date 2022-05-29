@@ -38,7 +38,7 @@ cinemaBtns.forEach(btn => {
 phimTheoLoai(1)
 function phimTheoLoai(loai){
     var html = ""
-    fetch('http://localhost:8080/Cinema/api/phim/loai/' + loai)
+    fetch('http://localhost:8080/api/phim/loai/' + loai)
         .then(response => response.json())
         .then(data => {
                 for (var item in data) {
