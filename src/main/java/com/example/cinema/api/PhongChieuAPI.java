@@ -17,6 +17,8 @@ import java.util.regex.Pattern;
 public class PhongChieuAPI extends HttpServlet {
     private PhongChieuDAO phongChieuDAO = new PhongChieuDAO();
     private Gson gson = new Gson();
+    /*url: http://localhost:8080/Cinema/api/phong/1
+    * Lấy thông tin phòng chiếu*/
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json; charset=UTF-8");
@@ -30,7 +32,6 @@ public class PhongChieuAPI extends HttpServlet {
             out.print(json);
 
         }
-//        out.print("ok1");
     }
 
     @Override
